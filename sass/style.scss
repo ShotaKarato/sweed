@@ -154,6 +154,27 @@ img {
   }
 }
 
+.icon-instagram {
+  margin: 0 0 32px;
+  text-align: center;
+  &__link {
+    display: inline-block;
+  }
+  &__img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.posts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  list-style: none;
+  &__post {
+    
+  }
+}
+
 .section-menu {
   margin: 140px 0 80px;
   padding: 52px 0;
