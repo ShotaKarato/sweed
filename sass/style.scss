@@ -1,11 +1,15 @@
 @import '_config', '_sanitize';
 
+//global
 html {
   font-size: 62.5%;
 }
 img {
   max-width: 100%;
   height: auto;
+}
+.hidden {
+  display: none;
 }
 
 .main-visual {
@@ -90,7 +94,45 @@ img {
     &--long {
       width: 64px;
     }
+    &--selected {
+      position: relative;
+    }
+    &--selected::after {
+      position: absolute;
+      content: '';
+      width: 30px;
+      height: 2px;
+      bottom: 0;
+      background: #fff;
+    }
   }
+}
+
+.member-bubbles {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  &__bubble {
+    position: absolute;
+    top: -16px;
+  }
+  &__img {
+    width: 200px;
+  }
+}
+// positions of each member's speech bubble
+#satoshi {
+  left: 15%
+}
+#takuya {
+  left: 30%
+}
+#daichan {
+  left: 35%
+}
+#hisashi {
+  left: 50%
 }
 
 .service {
