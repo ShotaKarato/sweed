@@ -67,7 +67,29 @@ img {
     color: $fc-primary;
   }
   &__img-wrap {
+    position: relative;
     margin: 0;
+  }
+}
+
+.member-names {
+  position: absolute;
+  top: 50px;
+  display: table;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  &__name {
+    display: table-cell;
+    width: 20%;
+    text-align:center;
+  }
+  &__img {
+    width: 40px;
+    &--long {
+      width: 64px;
+    }
   }
 }
 
