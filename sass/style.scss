@@ -1,15 +1,21 @@
-@import '_config', '_sanitize';
+@import "_config", "_sanitize";
 
 //global
 html {
   font-size: 62.5%;
+}
+body {
+  position: relative;
 }
 img {
   max-width: 100%;
   height: auto;
 }
 .hidden {
-  display: none;
+  display: none !important;
+}
+.no-scroll {
+  overflow: hidden;
 }
 
 .main-visual {
@@ -18,16 +24,38 @@ img {
   justify-content: center;
   height: 100vh;
   margin: 0 0 96px;
-  background: no-repeat url('../img/main.jpg');
+  background: no-repeat url("../img/main.jpg");
   background-size: 170%;
   background-position: center;
-  
+
   &__logo {
     margin: 0;
     text-align: center;
   }
   &__logo-img {
     width: 53%;
+  }
+}
+.links {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: $fc-secondary;
+  &__ig-link {
+    display: inline-block;
+    margin: 0 16px 0 0;
+  }
+  &__link-img {
+    width: 24px;
+    max-width: 24px;
+    height: 24px;
+  }
+  &__nav-link {
+    font-size: 2.4rem;
   }
 }
 .section {
@@ -44,23 +72,23 @@ img {
   }
   &__heading-wrap::before {
     position: absolute;
-    content: '';
+    content: "";
     width: 13px;
     height: 13px;
     top: 0;
     left: -6px;
-    background: no-repeat url('../img/img-decoration-navy.png');
+    background: no-repeat url("../img/img-decoration-navy.png");
     background-size: contain;
   }
   &__heading-wrap::after {
     position: absolute;
-    content: '';
+    content: "";
     width: 88px;
     height: 6px;
     bottom: -4px;
     left: 50%;
     transform: translateX(-50%);
-    background: no-repeat url('../img/img-underline-navy.png');
+    background: no-repeat url("../img/img-underline-navy.png");
     background-size: contain;
   }
   &__desc {
@@ -87,23 +115,16 @@ img {
   &__name {
     display: table-cell;
     width: 20%;
-    text-align:center;
+    text-align: center;
   }
   &__img {
     width: 40px;
+    padding: 4px;
     &--long {
       width: 64px;
     }
     &--selected {
-      position: relative;
-    }
-    &--selected::after {
-      position: absolute;
-      content: '';
-      width: 30px;
-      height: 2px;
-      bottom: 0;
-      background: #fff;
+      border-bottom: solid 1px #fff;
     }
   }
 }
@@ -123,16 +144,16 @@ img {
 }
 // positions of each member's speech bubble
 #satoshi {
-  left: 15%
+  left: 15%;
 }
 #takuya {
-  left: 30%
+  left: 30%;
 }
 #daichan {
-  left: 35%
+  left: 35%;
 }
 #hisashi {
-  left: 50%
+  left: 50%;
 }
 
 .service {
@@ -146,11 +167,11 @@ img {
     font-family: $ff-desc;
     color: $fc-primary;
     &--service01 {
-      background: no-repeat url('../img/img-05.jpg');
+      background: no-repeat url("../img/img-05.jpg");
       background-size: cover;
     }
     &--service02 {
-      background: no-repeat url('../img/img-06.jpg');
+      background: no-repeat url("../img/img-06.jpg");
       background-size: cover;
     }
   }
@@ -213,7 +234,7 @@ img {
   }
   &__access-list-item::before {
     position: absolute;
-    content: '・';
+    content: "・";
     left: -4px;
   }
 }
@@ -239,14 +260,13 @@ img {
   padding: 0;
   list-style: none;
   &__post {
-    
   }
 }
 
 .section-menu {
   margin: 140px 0 80px;
   padding: 52px 0;
-  background: no-repeat url('../img/img-03.jpg');
+  background: no-repeat url("../img/img-03.jpg");
   background-size: cover;
   background-position: center;
   &__heading {
@@ -261,23 +281,23 @@ img {
   }
   &__heading-wrap::before {
     position: absolute;
-    content: '';
+    content: "";
     width: 13px;
     height: 13px;
     top: 0;
     left: -6px;
-    background: no-repeat url('../img/img-decoration-white.png');
+    background: no-repeat url("../img/img-decoration-white.png");
     background-size: contain;
   }
   &__heading-wrap::after {
     position: absolute;
-    content: '';
+    content: "";
     width: 88px;
     height: 6px;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    background: no-repeat url('../img/img-underline-white.png');
+    background: no-repeat url("../img/img-underline-white.png");
     background-size: contain;
   }
   &__desc {
@@ -292,8 +312,8 @@ img {
   }
   &__menu::before {
     position: absolute;
-    content: '';
-    background: no-repeat url('../img/bg-coffee@2x.png');
+    content: "";
+    background: no-repeat url("../img/bg-coffee@2x.png");
     background-size: contain;
     width: 214px;
     height: 266px;
@@ -326,19 +346,19 @@ img {
     position: relative;
     margin: 0 0 8px;
     padding: 0 0 2px;
-    line-height: .8;
+    line-height: 0.8;
     font-family: $ff-heading;
     font-size: 2.4rem;
     &--focus::after {
-      background: no-repeat url('../img/img-underline-white.png');
+      background: no-repeat url("../img/img-underline-white.png");
     }
     &--chill::after {
-      background: no-repeat url('../img/img-underline-navy.png');
+      background: no-repeat url("../img/img-underline-navy.png");
     }
   }
   &__menu-title::after {
     position: absolute;
-    content: '';
+    content: "";
     width: 55px;
     height: 3px;
     bottom: -2px;
@@ -357,8 +377,8 @@ img {
 }
 
 .footer {
-  padding: 32px 0 0; 
-  background: no-repeat url('../img/img-11.jpg');
+  padding: 32px 0 0;
+  background: no-repeat url("../img/img-11.jpg");
   background-size: cover;
   &__logo-wrapper {
     margin: 0 0 40px;
@@ -393,5 +413,40 @@ img {
     padding: 4px 0;
     text-align: center;
     font-weight: 300;
+  }
+}
+
+.nav {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.8);
+  &__icon-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 3rem;
+    color: $fc-primary;
+  }
+  &__menus {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  &__menu {
+    margin: 0 0 12px;
+    text-align: center;
+    font-family: $ff-heading;
+    font-size: 3.6rem;
+    font-weight: 700;
+  }
+  &__menu-link {
+    text-decoration: none;
+    color: $fc-primary;
   }
 }

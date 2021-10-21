@@ -8,6 +8,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Sawarabi+Gothic&display=swap"
       rel="stylesheet"
     />
@@ -17,8 +23,27 @@
     <header class="header"></header>
     <main>
       <section class="main-visual">
+        <ul class="links">
+          <li class="links__link">
+            <a href="" class="links__ig-link">
+              <img
+                src="./img/icon-instagram.png"
+                class="links__link-img"
+                width="30"
+                height="30"
+              />
+            </a>
+          </li>
+          <li class="links__link">
+            <i class="fas fa-bars links__nav-link"></i>
+          </li>
+        </ul>
         <h1 class="main-visual__logo">
-          <img src="./img/logo.png" alt="画像：Sweedロゴ画像" class="main-visual__logo-img">
+          <img
+            src="./img/logo.png"
+            alt="画像：Sweedロゴ画像"
+            class="main-visual__logo-img"
+          />
         </h1>
       </section>
       <section class="section">
@@ -27,11 +52,15 @@
         </h2>
         <div class="section__contents">
           <p class="section__desc">
-            「楽しくて頑張りたい」と思えるような<br>素敵な場を作りたい。<br>Sweedはそんな思いから生まれたCafe
+            「楽しくて頑張りたい」と思えるような<br />素敵な場を作りたい。<br />Sweedはそんな思いから生まれたCafe
             & Barです。
           </p>
           <figure class="section__img-wrap">
-            <img src="./img/img-01.png" alt="画像：コーヒーを入れる準備の様子" class="section__img">
+            <img
+              src="./img/img-01.png"
+              alt="画像：コーヒーを入れる準備の様子"
+              class="section__img"
+            />
           </figure>
         </div>
       </section>
@@ -41,42 +70,111 @@
         </h2>
         <div class="section__contents">
           <p class="section__desc">
-            個性豊かなSweedのメンバー。<br>美味しいコーヒーと一緒にお待ちしています。
+            個性豊かなSweedのメンバー。<br />美味しいコーヒーと一緒にお待ちしています。
           </p>
           <figure class="section__img-wrap">
-            <img src="./img/img-02.png" alt="画像：Sweedメンバーの集合写真" class="section__img">
+            <img
+              src="./img/img-02.png"
+              alt="画像：Sweedメンバーの集合写真"
+              class="section__img"
+            />
             <ul class="member-names">
               <li class="member-names__name">
-                <img src="./img/name-kyohei.png" alt="メンバーの名前：きょうへい" class="member-names__img member-names__img--long" data-id="kyohei">
+                <img
+                  src="./img/name-kyohei.png"
+                  alt="メンバーの名前：きょうへい"
+                  class="
+                    member-names__img
+                    member-names__img--long
+                    member-names__img--selected
+                  "
+                  data-id="kyohei"
+                />
               </li>
               <li class="member-names__name">
-                <img src="./img/name-satoshi.png" alt="メンバーの名前：さとし" class="member-names__img" data-id="satoshi">
+                <img
+                  src="./img/name-satoshi.png"
+                  alt="メンバーの名前：さとし"
+                  class="member-names__img"
+                  data-id="satoshi"
+                />
               </li>
               <li class="member-names__name">
-                <img src="./img/name-takuya.png" alt="メンバーの名前：たくや" class="member-names__img" data-id="takuya">
+                <img
+                  src="./img/name-takuya.png"
+                  alt="メンバーの名前：たくや"
+                  class="member-names__img"
+                  data-id="takuya"
+                />
               </li>
               <li class="member-names__name">
-                <img src="./img/name-dchan.png" alt="メンバーの名前：だいちゃん" class="member-names__img member-names__img--long" data-id="daichan">
+                <img
+                  src="./img/name-dchan.png"
+                  alt="メンバーの名前：だいちゃん"
+                  class="member-names__img member-names__img--long"
+                  data-id="daichan"
+                />
               </li>
               <li class="member-names__name">
-                <img src="./img/name-hisashi.png" alt="メンバーの名前：ひさし" class="member-names__img" data-id="hisashi">
+                <img
+                  src="./img/name-hisashi.png"
+                  alt="メンバーの名前：ひさし"
+                  class="member-names__img"
+                  data-id="hisashi"
+                />
               </li>
             </ul>
             <ul class="member-bubbles">
-              <li class="member-bubbles__bubble hidden" id="kyohei" data-id="kyohei">
-                <img src="./img/bubble-kyohei.png" alt="メンバーからの一言：" class="member-bubbles__img">
+              <li class="member-bubbles__bubble" id="kyohei" data-id="kyohei">
+                <img
+                  src="./img/bubble-kyohei.png"
+                  alt="メンバーからの一言："
+                  class="member-bubbles__img"
+                />
               </li>
-              <li class="member-bubbles__bubble hidden" id="satoshi" data-id="satoshi">
-                <img src="./img/bubble-satoshi.png" alt="メンバーからの一言：" class="member-bubbles__img">
+              <li
+                class="member-bubbles__bubble hidden"
+                id="satoshi"
+                data-id="satoshi"
+              >
+                <img
+                  src="./img/bubble-satoshi.png"
+                  alt="メンバーからの一言："
+                  class="member-bubbles__img"
+                />
               </li>
-              <li class="member-bubbles__bubble hidden" id="takuya" data-id="takuya">
-                <img src="./img/bubble-takuya.png" alt="メンバーからの一言：" class="member-bubbles__img">
+              <li
+                class="member-bubbles__bubble hidden"
+                id="takuya"
+                data-id="takuya"
+              >
+                <img
+                  src="./img/bubble-takuya.png"
+                  alt="メンバーからの一言："
+                  class="member-bubbles__img"
+                />
               </li>
-              <li class="member-bubbles__bubble hidden" id="daichan" data-id="daichan">
-                <img src="./img/bubble-daichan.png" alt="メンバーからの一言：" class="member-bubbles__img">
+              <li
+                class="member-bubbles__bubble hidden"
+                id="daichan"
+                data-id="daichan"
+              >
+                <img
+                  src="./img/bubble-daichan.png"
+                  alt="メンバーからの一言："
+                  class="member-bubbles__img"
+                />
               </li>
-              <li class="member-bubbles__bubble hidden" id="hisashi" data-id="hisashi">
-                <img src="./img/bubble-hisashi.png" alt="メンバーからの一言：" class="member-bubbles__img">
+              <li
+                class="member-bubbles__bubble hidden"
+                id="hisashi"
+                data-id="hisashi"
+              >
+                <img
+                  src="./img/bubble-hisashi.png"
+                  alt="メンバーからの一言："
+                  class="member-bubbles__img"
+                />
               </li>
             </ul>
           </figure>
@@ -88,19 +186,41 @@
         </h2>
         <div class="section-menu__contents">
           <p class="section-menu__desc">
-            集中して作業をしたい。<br>今日はゆっくりリラックスしたい。<br>そんな人のためにと考え抜かれた<br>最高の一杯を提供します。
+            集中して作業をしたい。<br />今日はゆっくりリラックスしたい。<br />そんな人のためにと考え抜かれた<br />最高の一杯を提供します。
           </p>
           <div class="section-menu__menu">
             <div class="section-menu__menu-box section-menu__menu-box--focus">
               <dl class="section-menu__menu-list">
-                <dt class="section-menu__menu-title section-menu__menu-title--focus">Focus on<br><span class="section-menu__menu-title-sub">（中深煎り）</span></dt>
-                <dd class="section-menu__menu-detail">作業のお供にピッタリの一杯。<br>コクのある苦味で集中力を醸成。</dd>
+                <dt
+                  class="
+                    section-menu__menu-title section-menu__menu-title--focus
+                  "
+                >
+                  Focus on<br /><span class="section-menu__menu-title-sub"
+                    >（中深煎り）</span
+                  >
+                </dt>
+                <dd class="section-menu__menu-detail">
+                  作業のお供にピッタリの一杯。<br />コクのある苦味で集中力を醸成。
+                </dd>
               </dl>
             </div>
             <div class="section-menu__menu-box section-menu__menu-box--chill">
-              <dl class="section-menu__menu-list section-menu__menu-list--second">
-                <dt class="section-menu__menu-title section-menu__menu-title--chill">Chill out<br><span class="section-menu__menu-title-sub">（浅煎り）</span></dt>
-                <dd class="section-menu__menu-detail">リラックスタイムにピッタリの一杯。<br>酸味と奥行きのある味にホッと一息。</dd>
+              <dl
+                class="section-menu__menu-list section-menu__menu-list--second"
+              >
+                <dt
+                  class="
+                    section-menu__menu-title section-menu__menu-title--chill
+                  "
+                >
+                  Chill out<br /><span class="section-menu__menu-title-sub"
+                    >（浅煎り）</span
+                  >
+                </dt>
+                <dd class="section-menu__menu-detail">
+                  リラックスタイムにピッタリの一杯。<br />酸味と奥行きのある味にホッと一息。
+                </dd>
               </dl>
             </div>
           </div>
@@ -114,16 +234,20 @@
           <div class="service__item service__item--service01">
             <div class="service__content-wrapper">
               <h3 class="service__item-title">貸切も可能！</h3>
-              <p class="service__item-desc">研修会、お祝い会、など様々な<br>用途でご利用いただけます</p>
+              <p class="service__item-desc">
+                研修会、お祝い会、など様々な<br />用途でご利用いただけます
+              </p>
             </div>
           </div>
           <div class="service__item service__item--service02">
             <div class="service__content-wrapper-even">
               <h3 class="service__item-title">イベントも開催！</h3>
-            <p class="service__item-desc">映画観賞会、勉強会、朝活など<br>各種イベントを開催</p>
-            <p class="service__item-desc">
-              <a href="http://">詳しくはSweed Campへ</a>
-            </p>
+              <p class="service__item-desc">
+                映画観賞会、勉強会、朝活など<br />各種イベントを開催
+              </p>
+              <p class="service__item-desc">
+                <a href="http://">詳しくはSweed Campへ</a>
+              </p>
             </div>
           </div>
         </div>
@@ -134,35 +258,92 @@
         </h2>
         <div class="section__contents">
           <figure class="section__img-wrap">
-            <img src="./img/img-04.png" alt="画像：Sweed周辺の地図" class="section__img">
+            <img
+              src="./img/img-04.png"
+              alt="画像：Sweed周辺の地図"
+              class="section__img"
+            />
           </figure>
           <div class="info">
             <div class="info__item">
               <h3 class="info__item-title">
-                <svg id="icon-map" xmlns="http://www.w3.org/2000/svg" width="25.151" height="24.409" viewBox="0 0 25.151 24.409">
-                  <path id="Path_206" data-name="Path 206" d="M0,0H25.151V24.409H0Z" fill="none"/>
-                  <path id="Path_207" data-name="Path 207" d="M12.336,2A7.225,7.225,0,0,0,5,9.119c0,5.339,7.336,13.221,7.336,13.221s7.336-7.882,7.336-13.221A7.225,7.225,0,0,0,12.336,2Zm0,9.662a2.544,2.544,0,1,1,2.62-2.543A2.583,2.583,0,0,1,12.336,11.662Z" transform="translate(0.24 0.034)" fill="#374864"/>
+                <svg
+                  id="icon-map"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25.151"
+                  height="24.409"
+                  viewBox="0 0 25.151 24.409"
+                >
+                  <path
+                    id="Path_206"
+                    data-name="Path 206"
+                    d="M0,0H25.151V24.409H0Z"
+                    fill="none"
+                  />
+                  <path
+                    id="Path_207"
+                    data-name="Path 207"
+                    d="M12.336,2A7.225,7.225,0,0,0,5,9.119c0,5.339,7.336,13.221,7.336,13.221s7.336-7.882,7.336-13.221A7.225,7.225,0,0,0,12.336,2Zm0,9.662a2.544,2.544,0,1,1,2.62-2.543A2.583,2.583,0,0,1,12.336,11.662Z"
+                    transform="translate(0.24 0.034)"
+                    fill="#374864"
+                  />
                 </svg>
                 <span>住所</span>
-              </h3>  
-              <p class="info__item-desc">〒108 - 0074<br>東京都港区高輪1丁目1-11</p>
+              </h3>
+              <p class="info__item-desc">
+                〒108 - 0074<br />東京都港区高輪1丁目1-11
+              </p>
             </div>
             <div class="info__item">
               <h3 class="info__item-title">
-                <svg id="schedule" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                  <path id="Path_234" data-name="Path 234" d="M0,0H24V24H0Z" fill="none"/>
-                  <path id="Path_235" data-name="Path 235" d="M11.99,2A10,10,0,1,0,22,12,10,10,0,0,0,11.99,2ZM12,20a8,8,0,1,1,8-8A8,8,0,0,1,12,20Zm.5-13H11v6l5.25,3.15L17,14.92l-4.5-2.67Z" fill="#374864"/>
-                </svg>                
+                <svg
+                  id="schedule"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    id="Path_234"
+                    data-name="Path 234"
+                    d="M0,0H24V24H0Z"
+                    fill="none"
+                  />
+                  <path
+                    id="Path_235"
+                    data-name="Path 235"
+                    d="M11.99,2A10,10,0,1,0,22,12,10,10,0,0,0,11.99,2ZM12,20a8,8,0,1,1,8-8A8,8,0,0,1,12,20Zm.5-13H11v6l5.25,3.15L17,14.92l-4.5-2.67Z"
+                    fill="#374864"
+                  />
+                </svg>
                 <span>営業時間</span>
-              </h3>  
-              <p class="info__item-desc">平日 10:00 〜 22:00　休日 11:00 〜 22:00</p>
+              </h3>
+              <p class="info__item-desc">
+                平日 10:00 〜 22:00　休日 11:00 〜 22:00
+              </p>
             </div>
             <div class="info__item">
               <h3 class="info__item-title">
-                <svg id="icon-transport" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                  <path id="Path_208" data-name="Path 208" d="M0,0H24V24H0Z" fill="none"/>
-                  <path id="Path_209" data-name="Path 209" d="M12,2C8,2,4,2.5,4,6v9.5A3.5,3.5,0,0,0,7.5,19L6,20.5V21H8.23l2-2H14l2,2h2v-.5L16.5,19A3.5,3.5,0,0,0,20,15.5V6C20,2.5,16.42,2,12,2ZM7.5,17A1.5,1.5,0,1,1,9,15.5,1.5,1.5,0,0,1,7.5,17ZM11,10H6V6h5Zm2,0V6h5v4Zm3.5,7A1.5,1.5,0,1,1,18,15.5,1.5,1.5,0,0,1,16.5,17Z" fill="#374864"/>
-                </svg>                
+                <svg
+                  id="icon-transport"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    id="Path_208"
+                    data-name="Path 208"
+                    d="M0,0H24V24H0Z"
+                    fill="none"
+                  />
+                  <path
+                    id="Path_209"
+                    data-name="Path 209"
+                    d="M12,2C8,2,4,2.5,4,6v9.5A3.5,3.5,0,0,0,7.5,19L6,20.5V21H8.23l2-2H14l2,2h2v-.5L16.5,19A3.5,3.5,0,0,0,20,15.5V6C20,2.5,16.42,2,12,2ZM7.5,17A1.5,1.5,0,1,1,9,15.5,1.5,1.5,0,0,1,7.5,17ZM11,10H6V6h5Zm2,0V6h5v4Zm3.5,7A1.5,1.5,0,1,1,18,15.5,1.5,1.5,0,0,1,16.5,17Z"
+                    fill="#374864"
+                  />
+                </svg>
                 <span>公共交通機関でのアクセス</span>
               </h3>
               <p style="font-size: 14px">東京メトロ南北線 / 都営三田線</p>
@@ -178,21 +359,25 @@
         <div class="section__contents">
           <figure class="icon-instagram">
             <a href="http://" class="icon-instagram__link">
-              <img src="./img/instagram-navy.png" alt="インスタグラムのアイコン画像" class="icon-instagram__img">
+              <img
+                src="./img/instagram-navy.png"
+                alt="インスタグラムのアイコン画像"
+                class="icon-instagram__img"
+              />
             </a>
           </figure>
           <ul class="posts">
             <li class="post">
-              <img src="./img/img-07.jpg" alt="画像：Sweedの活動風景">
+              <img src="./img/img-07.jpg" alt="画像：Sweedの活動風景" />
             </li>
             <li class="post">
-              <img src="./img/img-08.jpg" alt="画像：Sweedの活動風景">
+              <img src="./img/img-08.jpg" alt="画像：Sweedの活動風景" />
             </li>
             <li class="post">
-              <img src="./img/img-09.jpg" alt="画像：Sweedの活動風景">
+              <img src="./img/img-09.jpg" alt="画像：Sweedの活動風景" />
             </li>
             <li class="post">
-              <img src="./img/img-10.jpg" alt="画像：Sweedの活動風景">
+              <img src="./img/img-10.jpg" alt="画像：Sweedの活動風景" />
             </li>
           </ul>
         </div>
@@ -201,49 +386,113 @@
     <footer class="footer">
       <div class="footer__link-block">
         <figure class="footer__logo-wrapper">
-          <img src="./img/logo.png" alt="画像：Sweedロゴ画像" class="footer__logo-img" width="63" height="63">
+          <img
+            src="./img/logo.png"
+            alt="画像：Sweedロゴ画像"
+            class="footer__logo-img"
+            width="63"
+            height="63"
+          />
         </figure>
         <ul class="footer__links">
           <li class="footer__link">
             <a href="http://">
-              <img src="./img/icon-instagram.png" width="30" height="30">
+              <img src="./img/icon-instagram.png" width="30" height="30" />
             </a>
           </li>
           <li class="footer__link">
             <a href="http://">
-              <img src="./img/icon-line.png" width="30" height="30">
+              <img src="./img/icon-line.png" width="30" height="30" />
             </a>
           </li>
           <li class="footer__link">
             <a href="http://">
-              <img src="./img/icon-instagram.png" width="30" height="30">
+              <img src="./img/icon-instagram.png" width="30" height="30" />
             </a>
           </li>
         </ul>
       </div>
       <div class="footer__info-item">
         <p class="footer__info-item-title">
-          <svg id="icon-map" xmlns="http://www.w3.org/2000/svg" width="16.15" height="15.673" viewBox="0 0 16.15 15.673">
-            <path id="Path_206" data-name="Path 206" d="M0,0H16.15V15.673H0Z" fill="none"/>
-            <path id="Path_207" data-name="Path 207" d="M9.71,2A4.639,4.639,0,0,0,5,6.571c0,3.429,4.71,8.49,4.71,8.49s4.71-5.061,4.71-8.49A4.639,4.639,0,0,0,9.71,2Zm0,6.2a1.633,1.633,0,1,1,1.682-1.633A1.659,1.659,0,0,1,9.71,8.2Z" transform="translate(-1.635 -0.694)" fill="#fff"/>
+          <svg
+            id="icon-map"
+            xmlns="http://www.w3.org/2000/svg"
+            width="16.15"
+            height="15.673"
+            viewBox="0 0 16.15 15.673"
+          >
+            <path
+              id="Path_206"
+              data-name="Path 206"
+              d="M0,0H16.15V15.673H0Z"
+              fill="none"
+            />
+            <path
+              id="Path_207"
+              data-name="Path 207"
+              d="M9.71,2A4.639,4.639,0,0,0,5,6.571c0,3.429,4.71,8.49,4.71,8.49s4.71-5.061,4.71-8.49A4.639,4.639,0,0,0,9.71,2Zm0,6.2a1.633,1.633,0,1,1,1.682-1.633A1.659,1.659,0,0,1,9.71,8.2Z"
+              transform="translate(-1.635 -0.694)"
+              fill="#fff"
+            />
           </svg>
           <span>住所</span>
-        </p>  
-        <p class="footer__info-item-desc">〒108 - 0074<br>東京都港区高輪1丁目1-11</p>
+        </p>
+        <p class="footer__info-item-desc">
+          〒108 - 0074<br />東京都港区高輪1丁目1-11
+        </p>
       </div>
       <div class="footer__info-item footer__info-item--last">
         <p class="footer__info-item-title">
-          <svg id="schedule" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-            <path id="Path_234" data-name="Path 234" d="M0,0H16V16H0Z" fill="none"/>
-            <path id="Path_235" data-name="Path 235" d="M7.994,2A6,6,0,1,0,14,8,6,6,0,0,0,7.994,2ZM8,12.8A4.8,4.8,0,1,1,12.8,8,4.8,4.8,0,0,1,8,12.8ZM8.3,5H7.4V8.6l3.15,1.89L11,9.752,8.3,8.15Z" fill="#fff"/>
-          </svg>          
+          <svg
+            id="schedule"
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+          >
+            <path
+              id="Path_234"
+              data-name="Path 234"
+              d="M0,0H16V16H0Z"
+              fill="none"
+            />
+            <path
+              id="Path_235"
+              data-name="Path 235"
+              d="M7.994,2A6,6,0,1,0,14,8,6,6,0,0,0,7.994,2ZM8,12.8A4.8,4.8,0,1,1,12.8,8,4.8,4.8,0,0,1,8,12.8ZM8.3,5H7.4V8.6l3.15,1.89L11,9.752,8.3,8.15Z"
+              fill="#fff"
+            />
+          </svg>
           <span>営業時間</span>
-        </p>  
-        <p class="footer__info-item-desc">平日 10:00 〜 22:00　休日 11:00 〜 22:00</p>
+        </p>
+        <p class="footer__info-item-desc">
+          平日 10:00 〜 22:00　休日 11:00 〜 22:00
+        </p>
       </div>
-      <p class="footer__copyright">Copyright<span>©</span> Sweed All Reserved.</p>
+      <p class="footer__copyright">
+        Copyright<span>©</span> Sweed All Reserved.
+      </p>
     </footer>
-
+    <div class="nav hidden">
+      <i class="fas fa-times nav__icon-close"></i>
+      <ul class="nav__menus">
+        <li class="nav__menu">
+          <a href="#about" class="nav__menu-link"> What’s Sweed? </a>
+        </li>
+        <li class="nav__menu">
+          <a href="#members" class="nav__menu-link"> Members </a>
+        </li>
+        <li class="nav__menu">
+          <a href="#menu" class="nav__menu-link"> Menu </a>
+        </li>
+        <li class="nav__menu">
+          <a href="#howto" class="nav__menu-link"> How to enjoy Sweed </a>
+        </li>
+        <li class="nav__menu">
+          <a href="#access" class="nav__menu-link"> Access </a>
+        </li>
+      </ul>
+    </div>
     <script src="./js/index.js"></script>
   </body>
 </html>
